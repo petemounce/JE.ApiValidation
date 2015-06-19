@@ -1,5 +1,7 @@
 # JE.ApiValidation.Library
 
+[![Build status](https://ci.appveyor.com/api/projects/status/6wigrr8a3b99mn0s?svg=true)](https://ci.appveyor.com/project/justeattech/je-apivalidation)
+
 ## Features
 ### Standard error response DTO
 * Clients shouldn't have to parse different response bodies to find out what went wrong.
@@ -28,8 +30,13 @@ Each filter or interceptor has a virtual method to allow you to log a warning in
 
 Please follow the guidelines in [CONTRIBUTING.md](CONTRIBUTING.md).
 
-* [CI (for now, internal to JE only; moving to appveyor soon)](http://ci.je-labs.com/project.html?projectId=Jalfrezi_Packages_JeApiValidationLibrary)
+* [Continuous Integration](https://ci.appveyor.com/project/justeattech/je-apivalidation)
 * To build, currently, use Visual Studio. We plan to open-source our build scripts, but haven't yet.
+```shell
+nuget restore
+start je.apivalidation.sln
+<build>
+```
 
 ## Getting Started
 
